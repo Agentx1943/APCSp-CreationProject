@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/agent/Downloads/FasMaths%20(1).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>Math Solver Time</title>
+
+<style> 
+    /*this makes the style the cube*/
+    #sqr {
+        border-style: inset;
+        border-color: rgb(86, 14, 202);
+        border-width: thick;
+        background-color:  #69f593;
+        width: 300px;
+        height: 600px;
+        border-radius: 12px;
+        position: absolute;
+          position: fixed;
+          left: 1200px;
+          top: 180px;
+        }
+    /*this makes the style for the tryangle*/
+    #sqr1 {
+        border-style: inset;
+        border-color: rgb(86, 14, 202);
+        border-width: thick;
+        background-color: #69f593;
+        width: 300px;
+        height: 600px;
+        border-radius: 12px;
+        position: absolute;
+          position: fixed;
+          left: 1600px;
+          top: 180px;
+        }
+    #fancyButtons {
+        width: 15px;
+    }	
+    </style>
+
+</head>
+<body style="background-color:rgb(173, 230, 201)">
+<center><h2>Math Time</h2></center>
+<center>By Aarav Sinha & Tyler Tuttle<br><br></center>
+<center id="jsOut"></center>  
+
+<center>
+    <form id="frm1" action="/action_page.php">
+        First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
+        Last Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Last"><br>
+        Common Diff: <input type="text" name="Diff"><br><br>
+      </form> 
+      <button onclick="arithSetUp()">Try it</button>
+</center>
+
+  
+
+  <script type="text/javascript">
+
+    function arithSetUp() {
+    var x = document.getElementById("frm1");
+      var inp = [];
+      var i;
+      for (i = 0; i < x.length ;i++) {
+        inp.push(parseInt(x.elements[i].value, 10));
+        console.log(inp)
+      }
+      arithSeq(inp[0],inp[1],inp[2])
+    }
+    
+    function arithSeq(first, last, diff) {
+        var fin = first + (last-1)*diff;
+        var count = 0;
+        for (var i = first; i < (fin + 1); i += diff) {
+            count += i;
+        }
+        console.log(count);
+        document.getElementById("jsOut").innerHTML = count;
+    }
+    </script>
