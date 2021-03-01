@@ -13,9 +13,20 @@
         width: 300px;
         height: 300px;
         border-radius: 12px;
-        position: sticky;
-          position: sticky;
+        position: absolute;
           left: 1200px;
+          top: 180px;
+        }
+    #sqr2 {
+        border-style: inset;
+        border-color: rgb(86, 14, 202);
+        border-width: thick;
+        background-color:  #69f593;
+        width: 300px;
+        height: 300px;
+        border-radius: 12px;
+        position: absolute;
+          left: 850px;
           top: 180px;
         }
     #miniSqr {
@@ -28,8 +39,17 @@
         border-radius: 12px;
         position: sticky;
           position: sticky;
-          left: 1200px;
-          top: 180px;
+        }
+        #miniSqr2 {
+        border-style: inset;
+        border-color: rgb(0, 0, 0);
+        border-width: thick;
+        background-color:  #ffffff;
+        width: 200px;
+        height: 30px;
+        border-radius: 12px;
+        position: sticky;
+          position: sticky;
         }
     #fancyButtons {
         width: 15px;
@@ -53,7 +73,19 @@
       <center><div id=miniSqr><center id="jsOut"></center></div></center>
     </div>
 
-  
+    <div id="sqr2"> <br><center><b>Check the type of number</b></center>
+        <form id="frm2" action="/action_page.php">
+            <br><br>
+            &nbsp;&nbsp;Numerator:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
+            &nbsp;&nbsp;Denominator:&nbsp; <input type="text" name="Last"><br> <br> <br>
+          </form> 
+          &nbsp;&nbsp;<button onclick="typeSetUp()">Try it</button>
+          <br><br>
+          <center><div id=miniSqr2><center id="jsOut1"></center></div></center>
+        </div>
+
+    <script src="src/index.js">
+    </script>
 
   <script type="text/javascript">
 
