@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0052)file:///C:/Users/agent/Downloads/FasMaths%20(1).html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<!--Original html written by Adam Mendelsohn and adapted by Aarav Sinha-->
 <title>Math Solver Time</title>
-
+<!--Original html written by Adam Mendelsohn and adapted by Aarav Sinha-->
 <style> 
     * {
   box-sizing: border-box;
@@ -43,7 +42,9 @@
         position: sticky;
         }
     .fancyButtons {
-        width: 15px;
+        width: 240px;
+        height: 50px;
+        background-color: #ffffff;
     }	
     </style>
 
@@ -59,8 +60,8 @@
             &nbsp;&nbsp;Last Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Last"><br>
             &nbsp;&nbsp;Common Diff: <input type="text" name="Diff"><br><br>
         </form> 
-        &nbsp;&nbsp;<button onclick="arithSetUp()">Try it</button>
-        <br><br>
+        <center><button class="fancyButtons" onclick="arithSetUp()">Try it</button></center>
+        <br>
         <center><div class="answer" id=miniSqr><center id="jsOut"></center></div></center>
         <br><br>
         </div>
@@ -72,35 +73,12 @@
             &nbsp;&nbsp;Numerator:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
             &nbsp;&nbsp;Denominator:&nbsp; <input type="text" name="Last"><br> <br> <br>
           </form> 
-          &nbsp;&nbsp;<button onclick="typeSetUp()">Try it</button>
-          <br><br>
+          <center><button class="fancyButtons" onclick="typeSetUp()">Try it</button></center>
+          <br>
           <center><div class="answer" id=miniSqr2><center id="jsOut1"></center></div></center>
           <br><br>
         </div>
 
-    <script src="src/index.js">
-    </script>
+    <script src="src/typeSolve.js"></script>
 
-  <script type="text/javascript">
-
-    function arithSetUp() {
-    var x = document.getElementById("frm1");
-      var inp = [];
-      var i;
-      for (i = 0; i < x.length ;i++) {
-        inp.push(parseInt(x.elements[i].value, 10));
-        console.log(inp)
-      }
-      arithSeq(inp[0],inp[1],inp[2])
-    }
-    
-    function arithSeq(first, last, diff) {
-        var fin = first + (last-1)*diff;
-        var count = 0;
-        for (var i = first; i < (fin + 1); i += diff) {
-            count += i;
-        }
-        console.log(count);
-        document.getElementById("jsOut").innerHTML = count;
-    }
-    </script>
+  <script src="src/arithAdd.js"></script>
