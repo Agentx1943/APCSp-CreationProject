@@ -5,7 +5,7 @@
 <title>Math Solver Time</title>
 
 <style> 
-    #sqr {
+    .box {
         border-style: inset;
         border-color: rgb(86, 14, 202);
         border-width: thick;
@@ -13,23 +13,12 @@
         width: 300px;
         height: 300px;
         border-radius: 12px;
-        position: absolute;
-          left: 1200px;
-          top: 180px;
+        } 
+        #type{
+            top: 20px;
+            left: 20px;
         }
-    #sqr2 {
-        border-style: inset;
-        border-color: rgb(86, 14, 202);
-        border-width: thick;
-        background-color:  #69f593;
-        width: 300px;
-        height: 300px;
-        border-radius: 12px;
-        position: absolute;
-          left: 850px;
-          top: 180px;
-        }
-    #miniSqr {
+    .answer {
         border-style: inset;
         border-color: rgb(0, 0, 0);
         border-width: thick;
@@ -38,20 +27,8 @@
         height: 30px;
         border-radius: 12px;
         position: sticky;
-          position: sticky;
         }
-        #miniSqr2 {
-        border-style: inset;
-        border-color: rgb(0, 0, 0);
-        border-width: thick;
-        background-color:  #ffffff;
-        width: 200px;
-        height: 30px;
-        border-radius: 12px;
-        position: sticky;
-          position: sticky;
-        }
-    #fancyButtons {
+    .fancyButtons {
         width: 15px;
     }	
     </style>
@@ -61,7 +38,7 @@
 <center><h2>Math Time</h2></center>
 <center>By Aarav Sinha & Tyler Tuttle<br><br></center>
 
-<div id="sqr"> <br><center><b>Calculate the sum of an Arithmetic Sequence</b></center>
+<div class="box" id="arith"> <br><center><b>Calculate the sum of an Arithmetic Sequence</b></center>
     <form id="frm1" action="/action_page.php">
         <br><br>
         &nbsp;&nbsp;First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
@@ -70,10 +47,11 @@
       </form> 
       &nbsp;&nbsp;<button onclick="arithSetUp()">Try it</button>
       <br><br>
-      <center><div id=miniSqr><center id="jsOut"></center></div></center>
+      <center><div class="answer" id=miniSqr><center id="jsOut"></center></div></center>
+      <br><br>
     </div>
 
-    <div id="sqr2"> <br><center><b>Check the type of number</b></center>
+    <div class="box" id="type"> <br><center><b>Check the type of number</b></center>
         <form id="frm2" action="/action_page.php">
             <br><br>
             &nbsp;&nbsp;Numerator:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
@@ -81,9 +59,20 @@
           </form> 
           &nbsp;&nbsp;<button onclick="typeSetUp()">Try it</button>
           <br><br>
-          <center><div id=miniSqr2><center id="jsOut1"></center></div></center>
+          <center><div class="answer" id=miniSqr2><center id="jsOut1"></center></div></center>
+          <br><br>
         </div>
-
+        <div class="box" id="ty12pe"> <br><center><b>Check the type of number</b></center>
+            <form id="frm2" action="/action_page.php">
+                <br><br>
+                &nbsp;&nbsp;Numerator:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
+                &nbsp;&nbsp;Denominator:&nbsp; <input type="text" name="Last"><br> <br> <br>
+              </form> 
+              &nbsp;&nbsp;<button onclick="typeSetUp()">Try it</button>
+              <br><br>
+              <center><div class="answer" id=miniSqr2><center id="jsOut1"></center></div></center>
+              <br><br>
+            </div>
     <script src="src/index.js">
     </script>
 
