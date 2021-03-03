@@ -17,5 +17,5 @@ function geoSetUp() {
         sum = numerator/denominator
         console.log(sum);
         document.getElementById("jsOut3").innerHTML = sum;
-
+        return sum;
     }
