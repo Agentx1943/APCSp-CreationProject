@@ -21,10 +21,11 @@ function gcdSetUp() {
         }
 
 function lcm(num1, num2) {
-   if ((typeof num1 !== 'number') || (typeof num2 !== 'number')) 
-   document.getElementById("lcmOut").innerHTML = error;
-    console.log((!num1 || !num2) ? 0 : Math.abs((num1 * num2) / gcd(num1, num2)));
-  document.getElementById("lcmOut").innerHTML = (!num1 || !num2) ? 0 : Math.abs((num1 * num2) / gcd(num1, num2));
+    var ans = Math.abs(num1*num2);
+    console.log(num1 + " " +num2);
+    ans = ans / gcd(num1,num2)
+    console.log(ans);
+  document.getElementById("lcmOut").innerHTML = ans;
 }
 
 function gcd(num1, num2) {
@@ -37,4 +38,5 @@ function gcd(num1, num2) {
   }
   console.log(num1);
   document.getElementById("gcdOut").innerHTML = num1;
+  return num1;
 }

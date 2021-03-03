@@ -16,5 +16,6 @@
         sum = n*(first+fin);
         console.log(sum);
         document.getElementById("jsOut").innerHTML = sum;
+        return sum;
     }
 
