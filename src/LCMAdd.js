@@ -25,8 +25,8 @@ function lcm(num1, num2) {
     console.log(num1 + " " +num2);
     ans = ans / gcd(num1,num2)
     console.log(ans);
-  document.getElementById("lcmOut").innerHTML = ans;
-  return ans
+    document.getElementById("lcmOut").innerHTML = ans;
+    return ans
 }
 
 function gcd(num1, num2) {

@@ -1,13 +1,20 @@
 function numType(num1,num2) {
     var result = "";
+    
+    if (num1 == num2) {
+      result = "Whole, Integer, Rational,"
+      console.log(result);
+      document.getElementById("jsOut1").innerHTML = result;
+      return;
+    }
     if (num1 % 1 == 0 && num1 >= 0) {
-    result = "Whole ";
+    result = "Whole " +",";
     }
     if (num1 % 1 == 0) {
-    result += "integer ";
+    result += "integer" +",";
     }
     if (num1 / num2 % 1 != 0 && num1 / num2 != num1) {
-    result += ("rational ");
+    result += ("rational") +",";
     }
     console.log(result);
     document.getElementById("jsOut1").innerHTML = result;
