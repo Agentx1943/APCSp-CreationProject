@@ -8,4 +8,8 @@ Each solver has its own small bordered box with an input form, a calculate butto
 The answer "boxes" or squares will have a margin from the sides of the page and from each other, they will also wrap around to the bottom if the screen size is too small, or if the window size is changed.
 
 # usage instructions:
-**The usage of the "web site" is very simple; once the zip file is downloaded, it must be extracted so that the html can access the script resources**
+The usage of the "web site" is very simple:
+
+**Once the zip file is downloaded, it must be extracted so that the html can access the script resources**
+
+Then, simple enter the values of something you would wish to solve, and click the "solve!" button
