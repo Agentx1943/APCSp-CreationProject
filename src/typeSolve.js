@@ -1,13 +1,26 @@
 function numType(num1,num2) {
     var result = "";
-    if (num1 % 1 == 0 && num1 >= 0) {
-    result = "Whole ";
+    
+    if (num1 == num2) {
+      result = "Whole, Integer, Rational"
+      console.log(result);
+      document.getElementById("jsOut1").innerHTML = result;
+      return;
     }
-    if (num1 % 1 == 0) {
-    result += "integer ";
+    if (num1/num2 % 1 == 0 && num1/num2 >= 0) {
+    result = "Whole";
+    }
+    if (num1/num2 % 1 == 0) {
+      if(result.length > 0) {
+        result += ", ";
+      }
+      result += "Integer";
     }
     if (num1 / num2 % 1 != 0 && num1 / num2 != num1) {
-    result += ("rational ");
+      if(result.length > 0) {
+        result += ", ";
+      }
+      result += ("Rational");
     }
     console.log(result);
     document.getElementById("jsOut1").innerHTML = result;

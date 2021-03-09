@@ -56,9 +56,9 @@
     <div class="box" id="arith"> <br><center><b>Calculate the sum of an Arithmetic Sequence</b></center>
         <form id="frm1" action="/action_page.php">
             <br><br>
-            &nbsp;&nbsp;First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
-            &nbsp;&nbsp;Last Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Last"><br>
-            &nbsp;&nbsp;Common Diff: <input type="text" name="Diff"><br><br>
+            &nbsp;&nbsp;First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="First"><br>
+            &nbsp;&nbsp;Last Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="Last"><br>
+            &nbsp;&nbsp;Common Diff: <input type="number" name="Diff"><br><br>
         </form> 
         <center><button class="fancyButtons" onclick="arithSetUp()">Solve!</button></center>
         <br>
@@ -68,21 +68,21 @@
         <div class="box" id="geo"> <br><center><b>Calculate the sum of an Geometric Sequence</b></center>
             <form id="frm3" action="/action_page.php">
                 <br><br>
-                &nbsp;&nbsp;First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
-                &nbsp;&nbsp;Last Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Last"><br>
-                &nbsp;&nbsp;Ratio: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Diff"><br><br>
+                &nbsp;&nbsp;First Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="First"><br>
+                &nbsp;&nbsp;Last Value:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="Last"><br>
+                &nbsp;&nbsp;Ratio: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="Diff"><br><br>
             </form> 
             <center><button class="fancyButtons" onclick="geoSetUp()">Solve!</button></center>
             <br>
-            <center><div class="answer" id=miniSqr3><center id="jsOut3"></center></div></center>
+            <center><div class="answer" id=miniSqr2><center id="jsOut3"></center></div></center>
             <br><br>
             </div>
 
     <div class="box" id="type"> <br><center><b>Check the type of number<br><br></b></center>
         <form id="frm2" action="/action_page.php">
             <br><br>
-            &nbsp;&nbsp;Numerator:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="First"><br>
-            &nbsp;&nbsp;Denominator:&nbsp; <input type="text" name="Last"><br> <br> <br>
+            &nbsp;&nbsp;Numerator:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="First"><br>
+            &nbsp;&nbsp;Denominator:&nbsp; <input type="number" name="Last"><br> <br> <br>
           </form> 
           <center><button class="fancyButtons" onclick="typeSetUp()">Solve!</button></center>
           <br>
@@ -93,8 +93,8 @@
         <div class="box" id="lcm"> <br><center><b>Find the LCM of two numbers<br><br></b></center>
             <form id="frm4" action="/action_page.php">
                 <br><br>
-                &nbsp;&nbsp;Number 1:&nbsp; <input type="text" name="First"><br>
-                &nbsp;&nbsp;Number 2:&nbsp; <input type="text" name="Last"><br> <br> <br>
+                &nbsp;&nbsp;Number 1:&nbsp; <input type="number" name="First"><br>
+                &nbsp;&nbsp;Number 2:&nbsp; <input type="number" name="Last"><br> <br> <br>
               </form> 
               <center><button class="fancyButtons" onclick="lcmSetUp()">Solve!</button></center>
               <br>
@@ -105,18 +105,30 @@
             <div class="box" id="GCD"> <br><center><b>Find the GCD of two numbers<br><br></b></center>
                 <form id="frm5" action="/action_page.php">
                     <br><br>
-                    &nbsp;&nbsp;Number 1:&nbsp; <input type="text" name="First"><br>
-                    &nbsp;&nbsp;Number 2:&nbsp; <input type="text" name="Last"><br> <br> <br>
+                    &nbsp;&nbsp;Number 1:&nbsp; <input type="number" name="First"><br>
+                    &nbsp;&nbsp;Number 2:&nbsp; <input type="number" name="Last"><br> <br> <br>
                   </form> 
                   <center><button class="fancyButtons" onclick="gcdSetUp()">Solve!</button></center>
                   <br>
                   <center><div class="answer" id=miniSqr5><center id="gcdOut"></center></div></center>
                   <br><br>
                 </div>
+            
+                <div class="box" id="PAL"> <br><center><b>Is your number a palindrome<br><br></b></center>
+                    <form id="frm6" action="/action_page.php">
+                        <br><br>
+                        &nbsp;&nbsp;Number:&nbsp; <input type="number" name="First"><br>
+                      </form> 
+                      <center><button class="fancyButtons" onclick="palSetUp()">Check!</button></center>
+                      <br>
+                      <center><div class="answer" id=miniSqr6><center id="palOut"></center></div></center>
+                      <br><br>
+                    </div>
         
     <script src="src/typeSolve.js"></script>
-<script src="src/geoAdd.js"></script>
-  <script src="src/arithAdd.js"></script>
-  <script src="src/LCMAdd.js"></script>
+    <script src="src/geoAdd.js"></script>
+    <script src="src/arithAdd.js"></script>
+    <script src="src/LCMAdd.js"></script>
+    <script src="src/palindrome.js"></script>
 
     
