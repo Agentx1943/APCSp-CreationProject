@@ -11,7 +11,7 @@ function palSetUp() {
 
 function palindromeCheck(num) {
     var reversedInteger = 0
-    var remainder = 0;
+    //var remainder = 0;
     var originalInteger = 0;
     var isPal = false
 
