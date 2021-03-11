@@ -25,6 +25,11 @@ function lcm(num1, num2) {
     console.log(num1 + " " +num2);
     ans = ans / gcd(num1,num2)
     console.log(ans);
+    if (ans.toString().length > 10) {
+      document.getElementById("lcmOut").innerHTML = '';
+      alert("The answer is: " + ans)
+      return ans;
+    }
     document.getElementById("lcmOut").innerHTML = ans;
     return ans
 }
@@ -38,6 +43,11 @@ function gcd(num1, num2) {
     num1 = x;
   }
   console.log(num1);
+  if (num1.toString().length > 10) {
+    document.getElementById("gcdOut").innerHTML = '';
+    alert("The answer is: " + num1)
+    return num1;
+  }
   document.getElementById("gcdOut").innerHTML = num1;
   return num1;
 }
