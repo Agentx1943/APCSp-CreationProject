@@ -16,6 +16,11 @@ function geoSetUp() {
         var denominator = 1 - ratio
         sum = numerator/denominator
         console.log(sum);
+        if (sum.toString().length > 10) {
+          document.getElementById("jsOut3").innerHTML = '';
+          alert("The answer is: " + sum)
+          return sum;
+        }
         document.getElementById("jsOut3").innerHTML = sum;
         return sum;
     }
