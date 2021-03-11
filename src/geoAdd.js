@@ -3,6 +3,12 @@ function geoSetUp() {
       var inp = [];
       var i;
       for (i = 0; i < x.length ;i++) {
+        if (!x.elements[i].value) {
+          alert(TypeError("Cannot use NULL in formula"))
+          console.log(TypeError("Cannot use NULL in formula"))
+          document.getElementById("jsOut3").innerHTML = '';
+          return 1;
+        }
         inp.push(parseInt(x.elements[i].value, 10));
         console.log(inp)
       }
