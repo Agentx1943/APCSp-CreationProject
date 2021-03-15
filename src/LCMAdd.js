@@ -6,7 +6,7 @@ function gcdSetUp() {
         if (!x.elements[i].value) {
           alert(TypeError("Cannot use NULL in formula"))
           console.log(TypeError("Cannot use NULL in formula"))
-          document.getElementById("gdcOut").innerHTML = '';
+          document.getElementById("gcdOut").innerHTML = '';
           return 1;
         }
         inp.push(parseInt(x.elements[i].value, 10));
