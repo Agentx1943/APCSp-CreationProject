@@ -1,0 +1,8 @@
+File,Lines (% total),Code Lines,% Code,Comment Lines,% Comment,Blank Lines,% Blank
+Main.html,134 (100.0%),122,91.0%,3,2.2%,9,6.7%
+LCMAdd.js,53 (28.3%),50,94.3%,0,0.0%,3,5.7%
+arithAdd.js,32 (14.6%),30,93.8%,0,0.0%,2,6.3%
+geoAdd.js,26 (10.6%),24,92.3%,1,3.8%,1,3.8%
+palindrome.js,41 (14.3%),37,90.2%,1,2.4%,3,7.3%
+typeSolve.js,39 (12.0%),37,94.9%,0,0.0%,2,5.1%
+Total,325,300,0.9,5,0.0,20,0.1
