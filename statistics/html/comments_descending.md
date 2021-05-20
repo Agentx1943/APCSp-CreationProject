@@ -1,0 +1,6 @@
+
+|[File](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fname_ascending.md%2F)|[Lines (% total)](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Flines_descending.md%2F)|[Code Lines](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fcode_descending.md%2F)|[% Code](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fproportion_code_descending.md%2F)|[Comment Lines](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fcomments_ascending.md%2F)|[% Comment](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fproportion_comments_descending.md%2F)|[Blank Lines](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fblanks_descending.md%2F)|[% Blank](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/statistics%2Fhtml%2Fproportion_blanks_descending.md%2F)|
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|[Main.html](https://github.com/Agentx1943/APCSp-CreationProject/tree/main/Main.html)|137 (100.0%)|125|91.2%|3|2.2%|9|6.6%|
+|Average |137.0|125.0|X|3.0|X|9.0|X|
+|Total (1)|137|125|91.2%|3| 2.2%|9|6.6%|
